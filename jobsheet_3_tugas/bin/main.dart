@@ -41,3 +41,13 @@ bool cekPrima(int angka) {
   }
   return true;
 }
+
+int hitungFaktorial(int angka) {
+  int hasil = 1;
+
+  for (int i = 1; i <= angka; i++) {
+    hasil *= i;
+  }
+
+  return hasil;
+}

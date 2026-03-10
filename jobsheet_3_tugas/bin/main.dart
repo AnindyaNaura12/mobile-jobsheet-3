@@ -19,8 +19,15 @@ void main() {
   print("Angka yang dimasukkan: $angka");
 
   if (pilihan == 1) {
-    print("Cek bilangan prima");
-  } else if (pilihan == 2) {
+    bool hasil = cekPrima(angka);
+
+    if (hasil) {
+      print("$angka adalah bilangan prima");
+    }else {
+      print("$angka bukan bilangan prima");
+    }
+  } 
+  else if (pilihan == 2) {
     print("Hitung faktorial");
   } else {
     print("Menu tidak tersedia");

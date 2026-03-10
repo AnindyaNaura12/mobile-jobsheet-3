@@ -23,7 +23,7 @@ void main() {
 
     if (hasil) {
       print("$angka adalah bilangan prima");
-    }else {
+    } else {
       print("$angka bukan bilangan prima");
     }
   } 

@@ -1,11 +1,28 @@
 import 'dart:io';
 
 void main() {
+  print("===== MENU MATEMATIKA SEDERHANA =====");
+  print("1. Cek Bilangan Prima");
+  print("2. Hitung Faktorial");
+
+  print("Pilih Menu:");
+  int pilihan = int.parse(stdin.readLineSync()!);
+
   print("Masukkan angka:");
   int angka = int.parse(stdin.readLineSync()!);
+
   if (angka <= 0) {
     print("Masukkan angka lebih dari 0");
+    return; 
+  }
+
+  print("Angka yang dimasukkan: $angka");
+
+  if (pilihan == 1) {
+    print("Cek bilangan prima");
+  } else if (pilihan == 2) {
+    print("Hitung faktorial");
   } else {
-    print ("Angka yang dimasukkan: $angka");
+    print("Menu tidak tersedia");
   }
 }

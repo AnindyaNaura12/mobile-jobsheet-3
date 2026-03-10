@@ -1,3 +1,6 @@
+import 'dart:io';
+
 void main() {
-  print("Progam Matematika Sederhana");
+  print("Masukkan angka:");
+  int angka = int.parse(stdin.readLineSync()!);
 }

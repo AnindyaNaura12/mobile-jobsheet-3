@@ -28,7 +28,8 @@ void main() {
     }
   } 
   else if (pilihan == 2) {
-    print("Hitung faktorial");
+    int hasil = hitungFaktorial(angka);
+    print("Faktorial dari $angka adalah $hasil");
   } else {
     print("Menu tidak tersedia");
   }
